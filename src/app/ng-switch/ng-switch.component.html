@@ -8,15 +8,22 @@
     <p *ngSwitchCase="'B'">
       This is B
     </p>
+    <p *ngSwitchCase="'C'">
+      This is C
+    </p>
     <p *ngSwitchDefault>
       This is something else
     </p>
   </span>
 </div>
 
-<div>
-  <label for="">myVar</label>
-  <input type="text" [value]="myVar" (keyup)="myVar = inputmyval.value;" #inputmyval>
+<div class="my-4">
+  <form>
+    <div class="form-group">
+      <label for="inputMyVal">myVar</label>
+      <input type="text" [(ngModel)]="myVar" class="form-control" id="inputMyVal" placeholder="Enter value" name="myVar">
+    </div>
+  </form>
 </div>
 
 <div class="bg-light my-4">

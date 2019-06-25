@@ -15,6 +15,9 @@ export class NgSwitchComponent implements OnInit {
     <p *ngSwitchCase="'B'">
       This is B
     </p>
+    <p *ngSwitchCase="'C'">
+      This is C
+    </p>
     <p *ngSwitchDefault>
       This is something else
     </p>
