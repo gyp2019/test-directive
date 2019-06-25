@@ -1,0 +1,35 @@
+<h4>3. *ngStyle</h4>
+
+<div class="border my-4 p-3">
+  <div [style.background-color]="'yellow'">background</div>
+</div>
+
+<div class="bg-light my-4">
+  <pre><code>{{ text1 }}</code></pre>
+</div>
+
+<div class="border my-4 p-3">
+  <div [ngStyle]="{color: 'white', 'background-color': 'blue'}">background</div>
+</div>
+
+<div class="bg-light my-4">
+  <pre><code>{{ text2 }}</code></pre>
+</div>
+
+
+<div class="border my-4 p-3">
+  <div>
+    <span [ngStyle]="{color: color}" [style.font-size.px]="fontSize">red text</span>
+  </div>
+  <div>
+    <input type="text" name="color" value="{{color}}" #colorinput>
+  </div>
+  <div>
+    <input type="number" name="fontSize" value="{{fontSize}}" #fontinput>
+  </div>
+  <button (click)="apply(colorinput.value, fontinput.value)">Apply</button>
+</div>
+
+<div class="bg-light my-4">
+  <pre><code>{{ text3 }}</code></pre>
+</div>
