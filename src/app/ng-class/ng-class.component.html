@@ -1,10 +1,47 @@
 <h4>4. *ngClass</h4>
 
-<div class="bg-light my-4">
+<div class="bg-light my-4 p-3">
   <div [ngClass]="{'border': false}">This is never bordered</div>
   <div [ngClass]="{'border': true}">This is always bordered</div>
 </div>
 
 <div class="bg-light my-4">
-    <pre><code>{{ text1 }}</code></pre>
+  <pre><code>{{ example1 }}</code></pre>
+</div>
+
+<div class="bg-light my-4 p-3">
+  <div [ngClass]="{'border': isBordered}">Border {{ isBordered ? "ON" : "OFF" }}</div>
+</div>
+
+<div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="checkIsBordered" [(ngModel)]="isBordered">
+    <label class="form-check-label" for="checkIsBordered">isBordered</label>
   </div>
+</div>
+
+<div class="bg-light my-4">
+  <pre><code>{{ example2 }}</code></pre>
+</div>
+
+<div class="bg-light my-4 p-3">
+  <div [ngClass]="classesObj">border {{ classesObj.border ? "ON" : "OFF" }}</div>
+</div>
+
+<div class="bg-light my-4">
+  <pre><code>{{ example3 }}</code></pre>
+</div>
+
+<div class="bg-light my-4 p-3">
+  <pre>
+    <div [ngClass]="classList">
+      This is{{ classList.indexOf('bg-primary') > -1 ? "" : " NOT" }} bg-primary
+      This is{{ classList.indexOf('rounded') > -1 ? "" : " NOT" }} rounded
+      This is{{ classList.indexOf('text-white') > -1 ? "" : " NOT" }} text-white
+    </div>
+  </pre>
+</div>
+
+<div class="bg-light my-4">
+  <pre><code>{{ example4 }}</code></pre>
+</div>
