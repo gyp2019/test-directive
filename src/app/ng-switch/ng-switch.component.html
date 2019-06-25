@@ -1,0 +1,24 @@
+<h4>2. *ngSwitch</h4>
+
+<div class="bg-light my-4">
+  <span [ngSwitch]="myVar">
+    <p *ngSwitchCase="'A'">
+      This is A
+    </p>
+    <p *ngSwitchCase="'B'">
+      This is B
+    </p>
+    <p *ngSwitchDefault>
+      This is something else
+    </p>
+  </span>
+</div>
+
+<div>
+  <label for="">myVar</label>
+  <input type="text" [value]="myVar" (keyup)="myVar = inputmyval.value;" #inputmyval>
+</div>
+
+<div class="bg-light my-4">
+  <pre><code>{{ text }}</code></pre>
+</div>
