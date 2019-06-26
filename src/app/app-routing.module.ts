@@ -9,6 +9,7 @@ import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgFormComponent } from './ng-form/ng-form.component';
 import { FormBuilderComponent } from './form-builder/form-builder.component';
+import { FormValidatorExplicitComponent } from './form-validator-explicit/form-validator-explicit.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'ng-for', component: NgForComponent },
   { path: 'ng-form', component: NgFormComponent },
   { path: 'form-builder', component: FormBuilderComponent },
+  { path: 'form-validator-ex', component: FormValidatorExplicitComponent },
   { path: '**', component: HomeComponent },
 ];
 

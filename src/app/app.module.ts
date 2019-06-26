@@ -13,6 +13,7 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgFormComponent } from "./ng-form/ng-form.component";
 import { FormBuilderComponent } from './form-builder/form-builder.component';
+import { FormValidatorExplicitComponent } from './form-validator-explicit/form-validator-explicit.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FormBuilderComponent } from './form-builder/form-builder.component';
     NgForComponent,
     NgFormComponent,
     FormBuilderComponent,
+    FormValidatorExplicitComponent,
   ],
   imports: [
     BrowserModule,
