@@ -1,0 +1,50 @@
+<div class="bg-light my-4 p-3">
+  <ul class="">
+    <li *ngFor="let c of cities">{{ c }}</li>
+  </ul>
+</div>
+
+<div class="bg-light my-4 p-3">
+  <ul class="list-unstyled">
+    <li *ngFor="let c of cities; let idx = index">{{ idx + 1 }}. {{ c }}</li>
+  </ul>
+</div>
+
+<div class="bg-light my-4 p-3">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of people">
+        <td>{{ p.name }}</td>
+        <td>{{ p.age }}</td>
+        <td>{{ p.city }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="bg-light my-4 p-3">
+  <div *ngFor="let item of peopleByCity">
+    <h3>{{ item.city }}</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of item.people">
+          <td>{{ p.name }}</td>
+          <td>{{ p.age }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

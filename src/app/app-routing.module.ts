@@ -6,6 +6,7 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'ng-switch', component: NgSwitchComponent },
   { path: 'ng-style', component: NgStyleComponent },
   { path: 'ng-class', component: NgClassComponent },
+  { path: 'ng-for', component: NgForComponent },
   { path: '**', component: HomeComponent },
 ];
 
