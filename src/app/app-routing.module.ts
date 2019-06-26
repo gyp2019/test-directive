@@ -7,6 +7,7 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { NgFormComponent } from './ng-form/ng-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'ng-style', component: NgStyleComponent },
   { path: 'ng-class', component: NgClassComponent },
   { path: 'ng-for', component: NgForComponent },
+  { path: 'ng-form', component: NgFormComponent },
   { path: '**', component: HomeComponent },
 ];
 

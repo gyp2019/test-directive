@@ -11,6 +11,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { NgFormComponent } from "./ng-form/ng-form.component";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NgForComponent } from './ng-for/ng-for.component';
     NgClassComponent,
     TopbarComponent,
     NgForComponent,
+    NgFormComponent,
   ],
   imports: [
     BrowserModule,
