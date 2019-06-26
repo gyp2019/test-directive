@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +12,7 @@ import { NgClassComponent } from './ng-class/ng-class.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgFormComponent } from "./ng-form/ng-form.component";
+import { FormBuilderComponent } from './form-builder/form-builder.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +25,12 @@ import { NgFormComponent } from "./ng-form/ng-form.component";
     TopbarComponent,
     NgForComponent,
     NgFormComponent,
+    FormBuilderComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
   ],
   providers: [],
