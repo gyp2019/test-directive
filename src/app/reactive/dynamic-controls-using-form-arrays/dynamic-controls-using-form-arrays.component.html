@@ -1,0 +1,50 @@
+<p>dynamic-controls-using-form-arrays works!</p>
+
+<div>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+      <label for="">First Name</label>
+      <input type="text" class="form-control" formControlName="firstName">
+    </div>
+    <div class="form-group">
+      <label for="">Last Name</label>
+      <input type="text" class="form-control" formControlName="lastName">
+    </div>
+    <fieldset formGroupName="address">
+      <div class="form-group">
+        <label for="">Street</label>
+        <input type="text" class="form-control" formControlName="street">
+      </div>
+      <div class="form-group">
+        <label for="">City</label>
+        <input type="text" class="form-control" formControlName="city">
+      </div>
+      <div class="form-group">
+        <label for="">State</label>
+        <input type="text" class="form-control" formControlName="state">
+      </div>
+      <div class="form-group">
+        <label for="">Zip</label>
+        <input type="text" class="form-control" formControlName="zip">
+      </div>
+    </fieldset>
+    <fieldset formArrayName="aliases">
+      <h4>Aliases</h4>
+      <button class="btn btn-outline-primary" (click)="addAlias()">Add Alias</button>
+      <div *ngFor="let col of aliases.controls; let i=index">
+        <label for="">Alias</label>
+        <input type="text" class="form-control" [formControlName]="i">
+      </div>
+    </fieldset>
+    <button type="submit" [disabled]="!profileForm.valid" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<div>
+  <p>Form value: {{ profileForm.value | json }}</p>
+  <p>Form Status: {{ profileForm.status }}</p>
+</div>
+
+<div class="my-3">
+  <button class="btn btn-primary" (click)="updateProfile()">Update profile</button>
+</div>

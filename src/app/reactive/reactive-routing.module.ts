@@ -7,6 +7,7 @@ import { ManagingControlValuesComponent } from './managing-control-values/managi
 import { GroupingFormControlsComponent } from './grouping-form-controls/grouping-form-controls.component';
 import { CreatingNestedFormGroupsComponent } from './creating-nested-form-groups/creating-nested-form-groups.component';
 import { GeneratingFormControlsWithFormbuilderComponent } from './generating-form-controls-with-formbuilder/generating-form-controls-with-formbuilder.component';
+import { DynamicControlsUsingFormArraysComponent } from './dynamic-controls-using-form-arrays/dynamic-controls-using-form-arrays.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'grouping-form-controls', component: GroupingFormControlsComponent },
       { path: 'creating-nested-form-groups', component: CreatingNestedFormGroupsComponent },
       { path: 'generating-form-controls-with-formbuilder', component: GeneratingFormControlsWithFormbuilderComponent },
+      { path: 'dynamic-controls-using-form-arrys', component: DynamicControlsUsingFormArraysComponent },
     ]
   }
 ];
