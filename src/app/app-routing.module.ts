@@ -10,6 +10,10 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgFormComponent } from './ng-form/ng-form.component';
 import { FormBuilderComponent } from './form-builder/form-builder.component';
 import { FormValidatorExplicitComponent } from './form-validator-explicit/form-validator-explicit.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { GettingStartedComponent } from './getting-started/getting-started.component';
+import { ManagingControlValuesComponent } from './managing-control-values/managing-control-values.component';
+import { GroupingFormControlsComponent } from './grouping-form-controls/grouping-form-controls.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +25,15 @@ const routes: Routes = [
   { path: 'ng-form', component: NgFormComponent },
   { path: 'form-builder', component: FormBuilderComponent },
   { path: 'form-validator-ex', component: FormValidatorExplicitComponent },
+  {
+    path: 'reactive-forms',
+    component: ReactiveFormsComponent,
+    children: [
+      { path: 'getting-started', component: GettingStartedComponent },
+      { path: 'managing-control-values', component: ManagingControlValuesComponent },
+      { path: 'grouping-fomr-controls', component: GroupingFormControlsComponent },
+    ],
+  },
   { path: '**', component: HomeComponent },
 ];
 

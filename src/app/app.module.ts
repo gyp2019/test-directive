@@ -14,6 +14,11 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgFormComponent } from "./ng-form/ng-form.component";
 import { FormBuilderComponent } from './form-builder/form-builder.component';
 import { FormValidatorExplicitComponent } from './form-validator-explicit/form-validator-explicit.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { GettingStartedComponent } from './getting-started/getting-started.component';
+import { ManagingControlValuesComponent } from './managing-control-values/managing-control-values.component';
+import { GroupingFormControlsComponent } from './grouping-form-controls/grouping-form-controls.component';
+import { CreatingNestedFormGroupsComponent } from './creating-nested-form-groups/creating-nested-form-groups.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +33,11 @@ import { FormValidatorExplicitComponent } from './form-validator-explicit/form-v
     NgFormComponent,
     FormBuilderComponent,
     FormValidatorExplicitComponent,
+    ReactiveFormsComponent,
+    GettingStartedComponent,
+    ManagingControlValuesComponent,
+    GroupingFormControlsComponent,
+    CreatingNestedFormGroupsComponent,
   ],
   imports: [
     BrowserModule,

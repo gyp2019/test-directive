@@ -23,7 +23,7 @@ export class FormValidatorExplicitComponent implements OnInit {
       ],
     });
     // this.emailControl = this.signForm.controls['email'];
-    // this.passwordContorl = this.signForm.controls['password'];
+    // this.passwordConttol = this.signForm.controls['password'];
   }
 
   onSubmit(): void {
