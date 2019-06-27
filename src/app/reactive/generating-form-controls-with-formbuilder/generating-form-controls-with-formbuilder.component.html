@@ -1,4 +1,4 @@
-<p>creating-nested-form-groups works!</p>
+<p>generating-form-controls-with-formbuilder works!</p>
 
 <div>
   <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
@@ -28,10 +28,15 @@
         <input type="text" class="form-control" formControlName="zip">
       </div>
     </fieldset>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" [disabled]="!profileForm.valid" class="btn btn-primary">Submit</button>
   </form>
 </div>
 
+<div>
+  <p>Form value: {{ profileForm.value | json }}</p>
+  <p>Form Status: {{ profileForm.status }}</p>
+</div>
+
 <div class="my-3">
-  <button class="btn btn-primary" [disabled]="!profileForm.valid" (click)="updateProfile()">Update profile</button>
+  <button class="btn btn-primary" (click)="updateProfile()">Update profile</button>
 </div>

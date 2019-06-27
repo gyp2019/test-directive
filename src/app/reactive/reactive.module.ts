@@ -9,7 +9,7 @@ import { GettingStartedComponent } from './getting-started/getting-started.compo
 import { ManagingControlValuesComponent } from './managing-control-values/managing-control-values.component';
 import { GroupingFormControlsComponent } from './grouping-form-controls/grouping-form-controls.component';
 import { CreatingNestedFormGroupsComponent } from './creating-nested-form-groups/creating-nested-form-groups.component';
-
+import { GeneratingFormControlsWithFormbuilderComponent } from './generating-form-controls-with-formbuilder/generating-form-controls-with-formbuilder.component';
 
 @NgModule({
   imports: [
@@ -23,6 +23,7 @@ import { CreatingNestedFormGroupsComponent } from './creating-nested-form-groups
     ManagingControlValuesComponent,
     GroupingFormControlsComponent,
     CreatingNestedFormGroupsComponent,
+    GeneratingFormControlsWithFormbuilderComponent,
   ],
 })
 export class ReactiveModule { }
