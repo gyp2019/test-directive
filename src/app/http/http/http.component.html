@@ -1,0 +1,6 @@
+<div class="container">
+  <p>Basic Request</p>
+  <button class="btn btn-primary" (click)="makeRequest()">Make Request</button>
+  <div *ngIf="loading">loading...</div>
+  <pre>{{ data | json }}</pre>
+</div>
